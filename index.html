@@ -1,0 +1,22 @@
+<html ng-app="app">
+ <head  >
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ <link rel ="stylesheet" type="text/css" href ="css/style.css"/>
+ 
+ </head>
+<body ng-controller="Main">
+  <div class="navigation">
+    <ul>
+      <li class="login"><a href="#/login">Login</a></li>
+      <li class="project" ng-click="getProjects()"><a href="#/projects">Projects</a></li>
+    </ul>
+  </div>
+  <div ng-view></div>   
+    <!--<button ng-click="getProjects()">Projects</button>-->
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+<script src="js/source.js"></script>
+</body>
+</html>
