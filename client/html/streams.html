@@ -1,0 +1,27 @@
+<div class= "container">
+<p><b>Streams in {{projectName}}</b></p>
+ <div class = "row" ng-repeat="stream in streams" >
+    <div class="col col-md-3" ng-click="getStream(stream)">
+        <div class="col col-md-3">Device : {{stream.device}}</div>
+        <div class="col col-md-1"></div>
+        <div class="col col-md-3">Org : {{stream.org}}</div>
+        <div class="col col-md-1"></div>
+        <div class="col col-md-3">Division Factor : {{stream.division_factor}}</div>
+        <div class="col col-md-1"></div>
+        <div class="col col-md-6 input">
+          <h4>Input Unit</h4>
+          <p>
+            <div>
+              <span><b>d</b> : {{stream.input_unit.d}}</span>
+              <span> <b>m</b> : {{stream.input_unit.m}}</span>
+              <span><b>o</b> : {{stream.input_unit.o}}</span>
+            </div>
+            <div>slug: {{stream.input_unit.slug}}</div>
+            
+            
+          </p>
+        </div>
+    </div>
+ </div>
+</div>
+

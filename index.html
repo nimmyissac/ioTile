@@ -4,19 +4,31 @@
  <link rel ="stylesheet" type="text/css" href ="css/style.css"/>
  
  </head>
-<body ng-controller="Main">
-  <div class="navigation">
-    <ul>
-      <li class="login"><a href="#/login">Login</a></li>
-      <li class="project" ng-click="getProjects()"><a href="#/projects">Projects</a></li>
-    </ul>
+ <body ng-controller="Main">
+  <div class="mainDiv">
+   <nav class="navbar navbar-default">
+     <div class="container-fluid">
+        <div class="navbar-header">
+         <a class="navbar-brand" href="#"> IOTile</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/login">Home</a></li>
+          <li ng-click="getProjects()"><a href="#/projects">Projects</a></li>
+        </ul>
+     </div>
+   </nav>
+   <div ng-view></div>
   </div>
-  <div ng-view></div>   
-    <!--<button ng-click="getProjects()">Projects</button>-->
-    
-
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+"></script>
+<script src="js/auth.js"></script>
+<script src="js/project.js"></script>
+<script src="js/stream.js"></script>
+<script src="client/services/services.js"></script>
+
 <script src="js/source.js"></script>
+
 </body>
 </html>
